@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./Sass/style.scss">
+    
+    <title>Ohmyfood</title>
+</head>
+<body>
+    <!-- Header -->
+  <a href="index.html">
+    <header class="header">
+        <i class="fa-solid fa-arrow-left"></i>
+        <img class="logo" src="./assets/images/logo/ohmyfood.png" alt="logo du site ohmyfood">
+    </header>
+  </a>
+    <!--MAIN RECHERCHE-->
+  <main>
+    <div class="main-container"> 
+        <section class="localisation">
+            <form id="search">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Paris, Belleville" name="localisation">
+                </div>    
+            </form>
+    
+            <div class="Explorez"> 
+                <h1 class="title">Réservez le menu qui vous convient</h1>
+                <p class="text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <button class="btn1"><span class= btn1_text>Explorez nos restaurants</span></button>
+            </div>   
+        </section>
+        <!---FONCTIONNEMENT-->
+        <section class="section-process">
+            <h2 class="title"> Fonctionnement</h2>
+          <div class="container">  
+                <div class="list_process"> 
+                    <span class="process_number">1</span></i>
+                    <i class="process_icon fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="list_process">        
+                    <span class="process_number">2</span></i>
+                    <i class="process_icon fa-solid fa-list"></i>
+                    <p>Composer votre menu</p>
+                </div>
+               <div class="list_process">
+                <span class="process_number">3</span></i>
+                <i class="process_icon fa-solid fa-store"></i>
+                <p>Déguster au restaurant</p>    
+          </div>    
+        </section>    
+        <!--Restaurant-->
+        <section class="restaurant">
+            <h2 class=title>Restaurants</h2>
+                <div class="restaurant-cards">
+
+                    <article class="Card-Menu">
+                        <a href="#">
+                            <div class="badge">Nouveau</div>
+                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt= "image d'une assiète sur la table"> 
+                            <div class="card-description">
+                                <h3>la palette du goût</h3>
+                                <p>Ménilmontant</p>    
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </a>    
+                    </article>
+        
+                    <a href="#">
+                        <article class="Card-Menu">
+                         <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image de 2 assiètes sur la table une rempli et une vide "> 
+                               <div class=badge>Nouveau</div>
+                            <div class="card-description">
+                                <h3>la note enchantée</h3>
+                                <p>Charonne</p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </article>
+                    </a>
+            
+                    <a href="#">
+                       <article class="Card-Menu">
+                            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image d'une assiète servi"> 
+                            <div class=badge>Nouveau</div>
+                         <div class="card-description">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                                <i class="fa-solid fa-heart"></i>
+                         </div>
+                        </article>
+                 </a>
+
+                    <a href="#">
+                        <article class="Card-Menu">
+                                <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'une assiète servie">
+                                    <div class=badge>Nouveau</div> 
+                                <div class="card-description">
+                                    <h3>À la française</h3>
+                                    <p>Folie-Méricourt</p>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>            
+                        </article>    
+                    </a> 
+                </div>             
+        </section>
+    </main>    
+
+    <!--Footer-->
+        <footer class="footer">
+          <div class="footer-container"> 
+                <a href="index.html">
+                 <!--<img class="logo-footer" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo footer">-->
+                 <h2 class="footer-title">ohmyfood</h2>
+                </a>
+
+            <ul>   
+                <li>
+                    <a href="#">
+                        <i class="footer-icon fa-solid fa-utensils"></i>Proposer un restaurant
+                    </a>
+                <li>
+                    <a href="#">
+                        <i class="footer-icon fa-solid fa-handshake-angle"></i>Devenir partenaire
+                    </a>
+                </li> 
+                <li> <a href="#">Légales</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>   
+        </footer>
+</body>
+</html>
