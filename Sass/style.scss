@@ -1,0 +1,113 @@
+@import "partials/header";
+@import "partials/colors";
+@import "partials/fa-solid";
+@import "partials/button";
+@import "partials/mixins";
+@import "partials/typo";
+@import "partials/cards";
+@import "partials/footer";
+
+            /****** General ***********/
+* {
+   font-family: 'Shrikhand';
+   --main-font-family:'Roboto';
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+        /***** PARTIE RECHERCHE*****/
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background:$variable-gray2;
+    box-shadow: 0px 4px 4px 0px  rgba(0, 0, 0, 0.25);
+}
+  
+    input{
+        font-size: 16px;
+        font-weight: 500;
+        background: $variable-gray2;
+        border:none;
+        }
+main{
+    margin:0;
+    padding:0;
+}        
+        
+.Explorez{
+    background:$filter-bg-color;
+    text-align: center;
+    @include section1;
+}
+    .title{
+        font-size: 24px;
+        font-weight: 700;
+        @include title1;
+    }
+
+    .text{
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }    
+                /********FONCTIONNEMENT*****/  
+.section-process{
+    @include section2;
+}
+    .container{
+        padding: 0;
+        margin:auto;
+        width: 100%;
+    }
+    .title{
+        @include title1;
+        margin-bottom: 20px;
+    }
+
+.list_process{
+    @include list;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($main-color, 35%);
+
+        &>.process_icon{
+            color: $main-color;
+        }
+    }
+}
+
+.process_number{
+    @include process_number;
+}
+                    /******SECTION RESTAURANT*****/
+.restaurant{
+    @include section2;
+    background-color: $filter-bg-color;
+    margin:auto;
+    max-width: 1440px;
+}
+    .title{
+        @include title1
+    }
+.restaurant-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &cards-img{
+        object-fit: cover
+    } 
+    &card-description{
+        background-color: $bg-color-white;
+    }
+}   

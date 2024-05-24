@@ -1,0 +1,32 @@
+/*** button***/
+
+.btn1{
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(193deg,$main-color -11.44%, $second-color 123.93%);
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+    text-align: center;
+
+
+    &:hover{
+      cursor: pointer;
+      opacity: 1;
+    	animation: flash 1.5s;
+      box-shadow: 5px 15px 21px #00000080;
+    }
+}
+
+.btn1_text{
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}    
+

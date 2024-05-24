@@ -1,0 +1,27 @@
+/*** HEADER Home page***/
+
+.header {
+  display: flex;
+  justify-content: center;
+  height:36px;
+  width: 100%;
+  z-index: 2;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  position: sticky;
+  & i.fa-solid{
+    display: none;
+  }
+    .logo{
+    width: 162px;
+    margin: auto; 
+    padding: 0 16px 0 19px;
+    height: 36px;
+  }
+}  
+
+
+
+ 
