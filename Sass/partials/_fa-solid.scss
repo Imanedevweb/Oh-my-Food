@@ -1,21 +1,19 @@
 
-/*** fa-solid***/
+/*** fa-solid page index.html***/
 
-header i.fa-solid{
-    width: 30px;
-    height: 30px;
+.header_ARROW{
+    
     color:$main-bg-color;
-    height: 30px;
-    width: 30px;
-    padding-left:17px;
-    padding-right: 42px;
-    padding-top: 14px;
-    padding-right: 13px;
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    font-size: 18px;
 }
+
 form i.fa-solid{
     width: 12px;
     height: 16px;
-    padding-right: 17px;
+    margin-right: 17px;
   }
 
 .process_icon{
@@ -28,6 +26,44 @@ form i.fa-solid{
         color: $main-color;
     }
 }
+/*****icon like index**/
+.card_footer .fa-heart{
+    font-size: 21px;
+    margin-top: 12px;
+}
+
+.heartfull{
+    
+    position: absolute;
+    z-index: 2;
+    color:transparent; 
+        &:hover{
+            cursor: pointer;
+            color:transparent;
+            background-image: linear-gradient($main-color,$second-color);
+            background-clip: text;
+    }    
+}
+/**** icon pages***/
+
+.header_Menu .fa-heart{
+    font-size: 24px;
+
+}
+.fa-circle-check{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+    
+    .cardMenu:hover .fa-circle-check{
+            transform: rotate(0);
+        }
+ }
+  
 
 /****fa-solid footer****/
 .footer-icon{
@@ -35,5 +71,6 @@ form i.fa-solid{
     height: 13px;
     margin-right:14px ;
 }
+
 
     

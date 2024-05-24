@@ -1,0 +1,165 @@
+/***image index****/
+.Card-Menu{
+    background-color:#ffff;
+    border-radius: 15px 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
+}    
+
+    .card_img{
+        display: flex;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+      img{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+        height: 175px;
+    
+      }
+}
+
+        .badge{
+        
+            color: #008766;
+            background-color: #99E2D0;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 2px;
+            padding: 6px 14.5px;
+            position: absolute;
+            top: 35px;
+            right: 17px;
+        }
+            
+        
+
+    
+.card_footer{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 25px 12px 13px;
+    justify-content: space-between;
+}
+
+    .card-description{
+       
+        h3{
+            font-size: 18px;
+            font-weight: 700px;
+            margin: 0
+        }
+
+        p{
+            font-size: 17px;
+            font-weight: 300px;
+            margin:0 0 5px 0;
+
+        }
+    }
+  
+                        /****pages restaurants****/
+.card_heart{
+    margin-right: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+.cardMenu{
+    font-family: 'roboto';
+    align-items: flex-end;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: $bg-color-white;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInup 0.5s ease forwards;
+    margin: 10px 0;
+    &:hover {
+        transform: translateX(-50px);
+    }
+
+    
+
+    &:nth-child(1){
+        animation-delay: 0.2s ;
+        }
+     &:nth-child(2){
+        animation-delay: 0.4s;
+        }
+     &:nth-child(3){
+        animation-delay: 0.6s;
+        }
+     &:nth-child(4){
+        animation-delay: 0.8s;
+        }
+     &:nth-child(5){
+        animation-delay: 1s;
+        }      
+     &:nth-child(6){
+        animation-delay: 1.2s;
+         }
+     &:nth-child(7){
+        animation-delay: 1.4s;
+        }
+     &:nth-child(8){
+        animation-delay: 1.6s;
+        }
+     &:nth-child(9){
+        animation-delay: 1.8s;
+     }       
+     
+
+    .card_container{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex-grow: 1;
+        transition: transform 0.3s ease;
+        margin-right: 10px;
+    }
+           
+        h3{
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            align-self: stretch;
+            font-weight: 500;
+        }
+            P{
+            margin: 0;
+            font-weight: 300;
+            font-size: 15px;
+         }
+
+    .cardPrix {
+    
+        font-weight: 700;
+        font-size: 15px;
+        margin-left: 13px;
+        margin-right: 5px;
+        opacity: 1;
+        transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) opacity 0.3 ease;
+    }
+}
+
+.cardMenu:hover .card_container P{
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 30px;
+        
+    }
+
+.cardMenu:hover .cardPrix{
+    transform: translateX(-50px);
+    opacity: 1;
+ 
+}
+

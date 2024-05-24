@@ -1,0 +1,66 @@
+/*** Responsives tablette***/
+           
+                /***page Index***/
+@media  screen and (min-width: 1024px){
+    
+    .Process{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    
+        .list_process{
+            width: 80%;
+        }
+    }
+
+    .restaurant{
+        .title{
+            margin-left: 62px;
+        }
+        .restaurant-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            }
+    
+        .Card-Menu{
+        width: 42%;
+        }
+    }
+
+    .footer{
+        .footer-title{
+            text-align: center;
+        }
+        ul{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        }
+    }
+
+    /*****PAGES RESTAURANTS*********/
+    .Menu_container {
+        width: 80%;
+        margin-left: 70px;
+        align-items: center;
+        .title_Menu{
+            margin: 0 20px;
+        }
+    }
+    .cardMenu {
+        width: 343px;
+    }
+}    
+
+
+/****Responsive desktop***/
+
+    //PAGE INDEX//
+@media  screen and (max-width: 1440px){
+    .section-process{
+        width: 80%;
+        justify-content: center;
+    }
+}

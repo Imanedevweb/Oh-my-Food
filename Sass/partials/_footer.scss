@@ -3,11 +3,14 @@
 .footer{
     background-color:$main-bg-color;
     padding: 22px 25px;
-    width: 90%;
-}
+
     .footer-title{
-        color: #ffffff;
+        color: $bg-color-white;
+        @include title2;
+        font-size: 18px;
     }
+}    
+
 .footer ul{
     list-style: none;
     padding: 0;
@@ -17,12 +20,10 @@
 .footer li{
     font-size: 16px;
     font-weight: 500px;
-    color: #ffffff;
+    color: $bg-color-white;
     padding-bottom:10px;
      
     &:hover{
         text-decoration: underline;
     }
 }
-
-

@@ -8,12 +8,17 @@
     margin-right: 10;
     font-size: 24px;
 }
+
 @mixin section2{
-    width: 100%;
     padding: 50px 20px;
-}   
+}
+  
+@mixin sectionRes{
+    padding: 50px 180px;
+}
+  
 @mixin box{
-    width: 322.486px;
+    width: auto;
     height: 72.379px;
     border-radius: 20px;
     background: $filter-bg-color;
@@ -49,10 +54,18 @@
     margin-top: 30px;
     margin-left: 15px;
     position: relative;
-    width: 86%;
 }
 
-@mixin image{
-    height: 231px;
-    width: 100%;
+/*****PAGES***/
+
+@mixin title2{
+    font-family:'Shrikhand';
+    font-weight: 400;
+    font-size: 28px;
+    margin:0;
+}
+
+@mixin parties{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
 }

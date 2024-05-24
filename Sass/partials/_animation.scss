@@ -1,0 +1,33 @@
+
+.heart-container .fa-regular {
+    color:$linear-gradient;
+}
+
+.heart-container .fa-solid {
+    color:$linear-gradient;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 0.5s ease, background 0.5s ease;
+    background: linear-gradient(to bottom, $main-color, $second-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.heart-container:hover .fa-solid {
+    clip-path: inset(0 0 0 0);
+}    
+
+.fa-circle-check{
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+}
+
+    :nth-child(1){
+    animation-delay: .3s;
+}
+
+@keyframes fadeInup{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

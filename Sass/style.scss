@@ -3,17 +3,17 @@
 @import "partials/fa-solid";
 @import "partials/button";
 @import "partials/mixins";
-@import "partials/typo";
 @import "partials/cards";
 @import "partials/footer";
+@import "partials/animation";
+@import "partials/responsives";
+
+
 
             /****** General ***********/
-* {
-   font-family: 'Shrikhand';
-   --main-font-family:'Roboto';
-}
 
 body {
+    font-family: 'Roboto' sans-serif;
     margin:0;
     padding:0;
 }
@@ -23,6 +23,9 @@ a {
     text-decoration: none;
 }
         /***** PARTIE RECHERCHE*****/
+.main-container{
+    width: 100%;
+ }       
 #search{
     display: flex;
     justify-content: center;
@@ -38,6 +41,7 @@ a {
         font-weight: 500;
         background: $variable-gray2;
         border:none;
+        width: 120px;
         }
 main{
     margin:0;
@@ -64,10 +68,11 @@ main{
 .section-process{
     @include section2;
 }
-    .container{
+    .Process{
         padding: 0;
         margin:auto;
         width: 100%;
+       
     }
     .title{
         @include title1;
@@ -77,6 +82,7 @@ main{
 .list_process{
     @include list;
 
+
     &:hover {
         cursor: pointer;
         background-color: lighten($main-color, 35%);
@@ -85,29 +91,70 @@ main{
             color: $main-color;
         }
     }
+
 }
 
 .process_number{
     @include process_number;
 }
-                    /******SECTION RESTAURANT*****/
+                    /******SECTION RESTAURANT home page*****/
 .restaurant{
     @include section2;
-    background-color: $filter-bg-color;
-    margin:auto;
-    max-width: 1440px;
-}
-    .title{
-        @include title1
-    }
-.restaurant-cards{
-    display: grid;
-    grid-template-columns: 1fr;
+  
 
-    &cards-img{
-        object-fit: cover
-    } 
-    &card-description{
-        background-color: $bg-color-white;
+    .title{
+        @include title1;
+        margin-bottom: 0;
     }
-}   
+   
+    .restaurant-cards{
+        padding:25px 0 0;
+        position: relative;
+    }
+}
+               /*******PAGES*******/
+.banner{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}  
+.Menu_container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    background-color: $filter-bg-color;
+    @include section2;
+    position: relative;
+    margin-top: -50px;
+    gap:12px;
+    .header_Menu{
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:  4px;
+    } 
+}       
+
+.title_Menu{
+   @include title2;
+}
+        
+.section_title{
+    
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+ 
+    border-bottom: 3px solid $tertiary-color;
+    width: 40px;
+    height: 3px;
+    padding-bottom: 24px;
+    
+}
+
+.Card-Menus{
+    max-width:100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
