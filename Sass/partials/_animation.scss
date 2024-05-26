@@ -52,3 +52,30 @@ transform: translateX(-55px);
 .cardMenu:hover .fa-circle-check{
 transform: rotate(360deg);
 }
+/****Animation Loaoder***/
+@keyframes fadeOut {
+    0%{ 
+        opacity:1;
+    }
+    100%{ 
+        opacity: 0; 
+        visibility: hidden;
+    }
+}
+@keyframes word{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(15px);
+        
+    }
+    70%{
+        transform: translateY(-10px);
+        
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+    
