@@ -1,7 +1,14 @@
-/*** Responsives tablette***/
+/***Responsives tablettes**/
+@media screen and (min-width: 694px){
+    
+}
+
+
+
+/*** Responsives DESKTOP***/
            
                 /***page Index***/
-@media  screen and (min-width: 1024px){
+@media  screen and (min-width: 1024px) and (max-width:1440px){
     
     .Process{
         display: flex;
@@ -30,37 +37,39 @@
     }
 
     .footer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+        .footer-container{
+            display: inline-flex;
+            flex-direction: row-reverse;
+            gap: 60px;  
+        }
+        
         .footer-title{
-            text-align: center;
+            margin: 12px !important;
         }
         ul{
         display: flex;
         gap: 20px;
-        justify-content: center;
+        justify-content: flex-end;
         }
     }
 
+
     /*****PAGES RESTAURANTS*********/
     .Menu_container {
-        width: 80%;
-        margin-left: 70px;
+       
         align-items: center;
         .title_Menu{
             margin: 0 20px;
         }
     }
     .cardMenu {
-        width: 343px;
+    
     }
-}    
+  
 
 
-/****Responsive desktop***/
 
-    //PAGE INDEX//
-@media  screen and (max-width: 1440px){
-    .section-process{
-        width: 80%;
-        justify-content: center;
-    }
-}
+

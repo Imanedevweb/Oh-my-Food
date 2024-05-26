@@ -100,7 +100,7 @@ main{
                     /******SECTION RESTAURANT home page*****/
 .restaurant{
     @include section2;
-  
+    background-color: $filter-bg-color;
 
     .title{
         @include title1;

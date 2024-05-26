@@ -74,11 +74,7 @@ form i.fa-solid {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-.fa-circle-check .cardMenu:hover .fa-circle-check {
-  transform: rotate(0);
+  transition: 0.5s ease-in-out;
 }
 
 /****fa-solid footer****/
@@ -110,17 +106,18 @@ form i.fa-solid {
 
 /*** PAGES****/
 .select-btn {
-  opacity: 0;
+  /* opacity: 0;*/
   position: absolute;
   background-color: #99e2d0;
   color: #fff;
   font-size: 20px;
-  padding: 25px 17.5px;
+  padding: 25.5px 20px;
   border-radius: 0 15px 15px 0;
-  left: 373px;
-  margin-bottom: -15px;
-  transform: translateX(0);
-  transform: rotate(0);
+  right: 0;
+  top: 0;
+  transform: translateX(65px);
+  /*margin-bottom: -15px;*/
+  transition: 0.5s ease-in-out;
 }
 
 .Menu_container .btn1 {
@@ -128,8 +125,8 @@ form i.fa-solid {
 }
 
 .cardMenu:hover .select-btn {
-  opacity: 1;
-  left: 314px;
+  /* opacity: 1;*/
+  transform: translateX(0);
 }
 
 /**** mixins index.html*****/
@@ -202,14 +199,10 @@ form i.fa-solid {
   border-radius: 15px;
   padding: 15px;
   margin-top: 12px;
-  position: relative;
-  transition: transform 0.3s ease;
-  opacity: 0;
-  animation: fadeInup 0.5s ease forwards;
-  margin: 10px 0;
+  animation: slideLeft 1s ease both;
 }
 .cardMenu:hover {
-  transform: translateX(-50px);
+  cursor: pointer;
 }
 .cardMenu:nth-child(1) {
   animation-delay: 0.2s;
@@ -244,7 +237,7 @@ form i.fa-solid {
   overflow: hidden;
   flex-grow: 1;
   transition: transform 0.3s ease;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .cardMenu h3 {
   margin: 0 0 5px 0;
@@ -260,21 +253,10 @@ form i.fa-solid {
 .cardMenu .cardPrix {
   font-weight: 700;
   font-size: 15px;
-  margin-left: 13px;
-  margin-right: 5px;
+  margin-left: 15px;
+  margin-right: 8px;
   opacity: 1;
-  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) opacity 0.3 ease;
-}
-
-.cardMenu:hover .card_container P {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 30px;
-}
-
-.cardMenu:hover .cardPrix {
-  transform: translateX(-50px);
-  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 
 /*****¨Footer mobile****/
@@ -324,24 +306,41 @@ form i.fa-solid {
   clip-path: inset(0 0 0 0);
 }
 
-.fa-circle-check {
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
+/**animation pages**/
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-:nth-child(1) {
-  animation-delay: 0.3s;
-}
-
 @keyframes fadeInup {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/*** Responsives tablette***/
+.cardMenu:hover .card_container P {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 30px;
+}
+
+.cardMenu:hover .cardPrix {
+  transform: translateX(-55px);
+}
+
+.cardMenu:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
+
+/***Responsives tablettes**/
+/*** Responsives DESKTOP***/
 /***page Index***/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   .Process {
     display: flex;
     flex-direction: row;
@@ -362,34 +361,32 @@ form i.fa-solid {
   .restaurant .Card-Menu {
     width: 42%;
   }
-  .footer .footer-title {
-    text-align: center;
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
   }
-  .footer ul {
+  .footer-container {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+  .footer-title {
+    margin: 12px !important;
+  }
+  ul {
     display: flex;
     gap: 20px;
-    justify-content: center;
-  }
-  /*****PAGES RESTAURANTS*********/
-  .Menu_container {
-    width: 80%;
-    margin-left: 70px;
-    align-items: center;
-  }
-  .Menu_container .title_Menu {
-    margin: 0 20px;
-  }
-  .cardMenu {
-    width: 343px;
+    justify-content: flex-end;
   }
 }
-/****Responsive desktop***/
-@media screen and (max-width: 1440px) {
-  .section-process {
-    width: 80%;
-    justify-content: center;
-  }
+/*****PAGES RESTAURANTS*********/
+.Menu_container {
+  align-items: center;
 }
+.Menu_container .title_Menu {
+  margin: 0 20px;
+}
+
 /****** General ***********/
 body {
   font-family: "Roboto" sans-serif;
@@ -510,6 +507,7 @@ main {
 /******SECTION RESTAURANT home page*****/
 .restaurant {
   padding: 50px 20px;
+  background-color: #f6f6f6;
 }
 .restaurant .title {
   margin: 0;

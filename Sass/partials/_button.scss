@@ -27,21 +27,19 @@
               /*** PAGES****/
 
 .select-btn{
-    opacity: 0;
+   /* opacity: 0;*/
     position: absolute;
     background-color: #99e2d0;
     color: #fff;
     font-size: 20px;
-    padding: 25px 17.5px;
+    padding:25.5px 20px;;
     border-radius: 0 15px 15px 0;
-    left:373px;
-    margin-bottom: -15px;
-    transform: translateX(0);
-    transform: rotate(0);
-    
-  
-
-} 
+    right: 0;
+    top:0;
+    transform: translateX(65px);
+    /*margin-bottom: -15px;*/
+    transition: .5s ease-in-out;
+}
 
 
 
@@ -51,6 +49,8 @@
 }
 
 .cardMenu:hover .select-btn{
-  opacity: 1;
-  left: 314px;
+ /* opacity: 1;*/
+  transform: translateX(0);
+
+  
 }

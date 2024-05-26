@@ -16,18 +16,39 @@
     clip-path: inset(0 0 0 0);
 }    
 
-.fa-circle-check{
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-}
 
-    :nth-child(1){
-    animation-delay: .3s;
-}
+/**animation pages**/
 
+@keyframes slideLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    
+    }
+}
 @keyframes fadeInup{
     to{
         opacity: 1;
         transform: translateY(0);
     }
+}
+.cardMenu:hover .card_container P{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 30px;
+    
+}
+
+.cardMenu:hover .cardPrix{
+transform: translateX(-55px);
+
+}
+
+.cardMenu:hover .fa-circle-check{
+transform: rotate(360deg);
 }
