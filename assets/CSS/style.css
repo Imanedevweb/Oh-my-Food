@@ -395,6 +395,89 @@ form i.fa-solid {
     transform: translateY(0);
   }
 }
+/***Responsive pour tablette***/
+@media (min-width: 768px) {
+  .section-process {
+    padding: 50px 50px !important;
+  }
+  .title {
+    margin-left: 0 !important;
+  }
+  .Process {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .list_process {
+    width: 100% !important;
+  }
+  .restaurant {
+    padding: 50px 50px !important;
+  }
+  .restaurant-cards {
+    display: flex;
+    gap: 15px;
+  }
+  .Card-Menu {
+    width: 50%;
+  }
+  .footer .footer-title {
+    text-align: center;
+  }
+  .footer ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .Menu_container {
+    margin: auto;
+    align-items: center;
+  }
+  .title_Menu {
+    margin-right: 35px !important;
+  }
+  /***Responsive pour grand ecrans***/
+}
+@media (min-width: 768px) and (min-width: 1024px) and (max-width: 1440px) {
+  .section-process {
+    padding: 50px 180px !important;
+  }
+  .restaurant {
+    padding: 50px 180px !important;
+  }
+  .restaurant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .Card-Menu {
+    width: 41.6%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer-container {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+  .footer-title {
+    margin: 10px !important;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 0 45px;
+  }
+  .Menu_container {
+    margin: auto;
+    align-items: center;
+    width: 68%;
+  }
+}
 /****** General ***********/
 body {
   font-family: "Roboto" sans-serif;
@@ -408,10 +491,6 @@ a {
 }
 
 /***** PARTIE RECHERCHE*****/
-.main-container {
-  width: 100%;
-}
-
 #search {
   display: flex;
   justify-content: center;
