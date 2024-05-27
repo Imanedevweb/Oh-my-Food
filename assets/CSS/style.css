@@ -570,7 +570,6 @@ main {
 }
 .list_process:hover {
   cursor: pointer;
-  background-color: #f2eafb;
 }
 .list_process:hover > .process_icon {
   color: #9356DC;

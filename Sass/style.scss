@@ -1,11 +1,11 @@
 @import "partials/Loader";
-@import "partials/header";
-@import "partials/colors";
-@import "partials/fa-solid";
-@import "partials/button";
-@import "partials/mixins";
-@import "partials/cards";
-@import "partials/footer";
+@import "Layouts/header";
+@import "utiles/colors";
+@import "utiles/fa-solid";
+@import "utiles/button";
+@import "utiles/mixins";
+@import "Layouts/cards";
+@import "Layouts/footer";
 @import "partials/animation";
 @import "partials/responsives";
 
@@ -84,7 +84,6 @@ main{
 
     &:hover {
         cursor: pointer;
-        background-color: lighten($main-color, 35%);
 
         &>.process_icon{
             color: $main-color;
