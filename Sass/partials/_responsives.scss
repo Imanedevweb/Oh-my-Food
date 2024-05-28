@@ -45,10 +45,10 @@
     .title_Menu{
       margin-right: 35px !important;
     }
-
+  }
  /***Responsive pour grand ecrans***/
               // Page Index//
-@media (min-width: 1024px) and (max-width:1440px){
+@media (min-width: 1024px) and (min-width:1440px){
   .section-process{
     padding: 50px 180px !important;
   }  
@@ -69,28 +69,27 @@
     flex-direction: row-reverse;
     }
     .footer-container{
-        display: inline-flex;
-        flex-direction: row-reverse;
-        gap: 60px;  
+      display: inline-flex;
+      flex-direction: row-reverse;
+      gap: 60px;  
     }
     
     .footer-title{
         margin: 10px !important;
     }
     ul{
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    margin:0 45px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      margin:0 45px;
     }
 
 
 
             // Pages Restaurant//
 .Menu_container{
-  margin: auto;
-  align-items: center;
-  width: 68%;
-  }              
-}
+    margin: auto;
+    align-items: center;
+    width: 68%;
+   }              
 }
