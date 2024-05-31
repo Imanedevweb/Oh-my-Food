@@ -435,6 +435,9 @@ form i.fa-solid {
   .title_Menu {
     margin-right: 35px !important;
   }
+  .Card-Menus {
+    width: 634px;
+  }
 }
 /***Responsive pour grand ecrans***/
 @media (min-width: 1024px) and (min-width: 1440px) {
